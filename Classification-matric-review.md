@@ -21,7 +21,7 @@ The clssifier output probability, and the binary and multiclass classigication f
 ![N](Images/Classification-matric-review/n.svg)=number of objects, ![L](Images/Classification-matric-review/l.svg)=number od classes, ![y](Images/Classification-matric-review/y.svg)=ground truth, ![y-hat](Images/Classification-matric-review/y-hat.svg)=prediction, ![indicator](Images/Classification-matric-review/indicator.svg)=indicator function
 
 <br/>
-![logloss formula](Images/Classification-matric-review/logloss-5.svg)
+![logloss formula alpha](Images/Classification-matric-review/logloss-5.svg)
 
 
 
