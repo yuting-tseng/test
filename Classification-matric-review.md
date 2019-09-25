@@ -23,10 +23,12 @@ The clssifier output probability, and the binary and multiclass classigication f
 <br/>
 ![logloss formula](Images/Classification-matric-review/logloss-5.svg)
 
+
+
 <img src="Images/Classification-matric-review/logloss.png" alt="logloss loss" width="40%" />
 
 * Logloss usually penalizes completely wrong answers and prefers to make a lot of small mistakes to one but severer mistake. 
-* Best constant: set ![alpha](Images/Classification-matric-review/alpha.svg) to frequency of the $$i$$-th class 
+* Best constant: set ![alpha](Images/Classification-matric-review/alpha.svg) to frequency of the ![i](Images/Classification-matric-review/i.svg)-th class 
   * Example dataset: 10 cats, 90 dogs ![logloss example](Images/Classification-matric-review/logloss-example.svg)
 
 <br/>
