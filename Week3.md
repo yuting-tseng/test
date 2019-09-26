@@ -97,8 +97,6 @@ MSPE(MAPE) as weighted MSE(MAE)
 
 #### Classification metrics optimization
 
-[Here are some of the library that support classification matrics (Logloss & AUC) optimization](Classification-metrics-optimization.md)
-
 Probability calobration
 
 * Platt scaling
@@ -108,25 +106,17 @@ Probability calobration
 * Stacking
   * Just fit XGBoost or neural net to your predictions
 
+<br/>
 
+There exists an algorithm to optimize AUC with gradient-based methods: **Pairwise loss**
 
-there exists an algorithm to optimize AUC with gradient-based methods: **Pairwise loss**
-
-![pairwise loss formula 1](Images/pairwise-loss-1.svg)
-
-<img src="Images/pairwise-loss-1.png" alt="pairwise-loss-1" width="40%;" />
-
-
-
-![pairwise loss formula 2](Images/pairwise-loss-2.svg)
-
-<img src="Images/pairwise-loss-2.png" alt="pairwise-loss-2" width="40%;" />
+[Here are some of the library that support classification matrics (Logloss & AUC) optimization](Classification-metrics-optimization.md)
 
 <br/>
 
-Quadratic weighted Kappa
+**To optimize Quadratic weighted Kappa**
 
-* To optimize Quadratic weighted Kappa, optimize MSE and find the right thresholds
+* optimize MSE and find the right thresholds
 
   * Simple
 
