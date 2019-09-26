@@ -25,7 +25,7 @@ MAE is more robust than MSE (it is not that influence by outliers, doesn’t mea
 
 
 
-####[Classification metrics review](Classification-matric-review.md)
+#### [Classification metrics review](Classification-matric-review.md)
 
 * Accuracy
 * Logloss
@@ -83,10 +83,6 @@ Optimize metric M1, monitor metric M2, stop when M2 score is the best.
 
 MSPE(MAPE) as weighted MSE(MAE)
 
-$$MAPE=\frac{100\%}{N}\sum^N_{i=1}|\frac{y_{i}-\hat{y_{i}}}{y_{i}}|$$
-
-$$w_{i}=\frac{\frac{1}{y^2_i}}{sum^N_{i=1}\frac{1}{y^2_i}}$$
-
 ![MSPE as weighted MSE formula](Images/MSPE-2.svg)
 
 
@@ -108,15 +104,17 @@ Probability calobration
 
 there exists an algorithm to optimize AUC with gradient-based methods: **Pairwise loss**
 
-$$min\sum^N_i\sum^N_jl_{pair}(\hat{y}_i, \hat{y}_j; y_i, y_j)$$
+![pairwise loss formula 1](Images/pairwise-loss-1.svg)
 
-<img src="/Users/beth_tseng/Desktop/pairwise-loss-1.png" alt="pairwise-loss-1" style="zoom:45%;" />
+<img src="Images/pairwise-loss-1.png" alt="pairwise-loss-1" style="zoom:45%;" />
 
 
+
+![pairwise loss formula 2](Images/pairwise-loss-2.svg)
 
 $$Loss=-\frac{1}{N_0N_2}\sum^{N_1}_{j:y_j=1}\sum^{N_0}_{i:y_i=0}log(prob(\hat{y_j}-\hat{y}_i))$$
 
-<img src="/Users/beth_tseng/Desktop/pairwise-loss-2.png" alt="pairwise-loss-2" style="zoom:45%;" />
+<img src="Images/pairwise-loss-2.png" alt="pairwise-loss-2" style="zoom:45%;" />
 
 
 
