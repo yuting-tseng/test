@@ -4,8 +4,6 @@
 
 >If your model is scored with some metric, you get best results by optimizing exactly that matric
 
-<br/>
-
 #### Regression Matrics Review
 
 >  [more detail about regression matrics review](Regression-metric-review.md)
@@ -63,9 +61,7 @@ classification materials
 
 <br/>
 
-**early stopping**
-
-Optimize metric M1, monitor metric M2, stop when M2 score is the best.
+**early stopping**: Optimize metric M1, monitor metric M2, stop when M2 score is the best.
 
 <img src="Images/early-stopping.png" alt="early stopping" width="45%;" />
 
@@ -106,11 +102,7 @@ Probability calobration
 * Stacking
   * Just fit XGBoost or neural net to your predictions
 
-<br/>
-
-There exists an algorithm to optimize AUC with gradient-based methods: **Pairwise loss**
-
-[Here are some of the library that support classification matrics (Logloss & AUC) optimization](Classification-metrics-optimization.md)
+[Here are some of the library that support classification matrics (Logloss & AUC) optimization.](Classification-metrics-optimization.md) There exists an algorithm to optimize AUC with gradient-based methods: **Pairwise loss**
 
 <br/>
 
