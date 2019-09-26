@@ -4,7 +4,11 @@
 
 >If your model is scored with some metric, you get best results by optimizing exactly that matric
 
-#### [Regression Matrics Review](Regression-metric-review.md)
+<br/>
+
+#### Regression Matrics Review
+
+>  [more detail about regression matrics review](Regression-metric-review.md)
 
 * MSE, RMSE, R-squared (Synonyms: **L2 loss**)
   * They are the same from optimization perspective
@@ -23,9 +27,11 @@ MAE is more robust than MSE (it is not that influence by outliers, doesn’t mea
 - Are you sure they are outliers? <img src="https://latex.codecogs.com/svg.latex?\Large&space;\to" title="R2-2" /> use MAE
 - Or they are just unexpected values we should still care about? <img src="https://latex.codecogs.com/svg.latex?\Large&space;\to" title="R2-2" /> use MSE
 
+<br/>
 
+#### Classification metrics review
 
-#### [Classification metrics review](Classification-matric-review.md)
+> [More detail about classification  matrics review](Classification-matric-review.md)
 
 * Accuracy
 * Logloss
@@ -40,19 +46,19 @@ classification materials
 - [Decision Trees: “Gini” vs. “Entropy” criteria](https://www.garysieling.com/blog/sklearn-gini-vs-entropy-criteria)
 - [Understanding ROC curves](http://www.navan.name/roc/)
 
-
+<br/>
 
 #### General approaches for metrics optimization
 
-- **Just run the right model!**
+- Just run the right model!
   - MSE, Logloss
-- **Preprocess train and optimize another metric**
+- Preprocess train and optimize another metric
   - MSPE, MAPE, RMSLE, .....
-- **Optimize another metric, postprocess predictions**
+- Optimize another metric, postprocess predictions
   - Accuracy, Kappa
-- **Write custom loss function**
+- Write custom loss function
   - Any, if you can
-- **Optimize another metric, use early stopping**
+- Optimize another metric, use early stopping
   - Any
 
 <br/>
@@ -63,7 +69,7 @@ Optimize metric M1, monitor metric M2, stop when M2 score is the best.
 
 <img src="Images/early-stopping.png" alt="early stopping" width="45%;" />
 
-
+<br/>
 
 #### Regression metrics optimization
 
@@ -87,6 +93,8 @@ MSPE(MAPE) as weighted MSE(MAE)
 
 
 
+<br/>
+
 #### Classification metrics optimization
 
 [Here are some of the library that support classification matrics (Logloss & AUC) optimization](Classification-metrics-optimization.md)
@@ -106,17 +114,15 @@ there exists an algorithm to optimize AUC with gradient-based methods: **Pairwis
 
 ![pairwise loss formula 1](Images/pairwise-loss-1.svg)
 
-<img src="Images/pairwise-loss-1.png" alt="pairwise-loss-1" style="zoom:45%;" />
+<img src="Images/pairwise-loss-1.png" alt="pairwise-loss-1" width="40%;" />
 
 
 
 ![pairwise loss formula 2](Images/pairwise-loss-2.svg)
 
-$$Loss=-\frac{1}{N_0N_2}\sum^{N_1}_{j:y_j=1}\sum^{N_0}_{i:y_i=0}log(prob(\hat{y_j}-\hat{y}_i))$$
+<img src="Images/pairwise-loss-2.png" alt="pairwise-loss-2" width="40%;" />
 
-<img src="Images/pairwise-loss-2.png" alt="pairwise-loss-2" style="zoom:45%;" />
-
-
+<br/>
 
 Quadratic weighted Kappa
 
@@ -137,7 +143,7 @@ Quadratic weighted Kappa
 
   * Harder
 
-
+<br/>
 
 Ranking materials
 
